@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView tvNewAccount;
+    TextView tvSignUp;
     ImageView btnVisibilityPass;
     EditText etPass;
 
@@ -24,8 +24,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        tvNewAccount = findViewById(R.id.tv_new_account);
-        tvNewAccount.setOnClickListener(this);
+        tvSignUp = findViewById(R.id.tv_signup);
+        tvSignUp.setOnClickListener(this);
 
         btnVisibilityPass = findViewById(R.id.btn_visibility_pass);
         btnVisibilityPass.setOnClickListener(this);
@@ -45,9 +45,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
                 break;
-            case R.id.tv_new_account:
+            case R.id.tv_signup:
                 Intent goToRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(goToRegister);
+                finish();
                 break;
         }
     }

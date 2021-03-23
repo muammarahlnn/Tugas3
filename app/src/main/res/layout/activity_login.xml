@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_form"
+    android:background="@drawable/bg_login"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="12dp"
             android:orientation="vertical">
 
             <TextView
@@ -96,8 +96,8 @@
 
                 <ImageView
                     android:id="@+id/btn_visibility_pass"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/ic_show_pass"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
@@ -106,6 +106,36 @@
             </RelativeLayout>
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterrat_light"
+                android:text="Remember me"
+                android:textSize="14sp"
+                android:textColor="@color/grayPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterrat_light"
+                android:text="Forgot password?"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/grayPrimary"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
 
         <Button
             android:id="@+id/btn_sign_in"
@@ -123,17 +153,19 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_new_account"
+        android:id="@+id/tv_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         android:fontFamily="@font/monsterrat_light"
-        android:text="Create new account"
+        android:text="Don't have an account? Sign Up"
         android:textColor="@color/grayPrimary"
-        android:textSize="21sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
