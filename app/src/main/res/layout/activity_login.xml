@@ -125,6 +125,7 @@
                 android:textColor="@color/grayPrimary" />
 
             <TextView
+                android:id="@+id/tv_forgot_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/monsterrat_light"

@@ -8,6 +8,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,7 +26,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
 
-    TextView tvSignUp;
+    TextView tvSignUp, tvForgotPassword;
     ImageView btnVisibilityPass;
     EditText etEmail, etPass;
     Button btnSignIn;
@@ -57,6 +58,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         tvSignUp = findViewById(R.id.tv_signup);
         tvSignUp.setOnClickListener(this);
 
+        tvForgotPassword = findViewById(R.id.tv_forgot_password);
+        tvForgotPassword.setOnClickListener(this);
+
         btnVisibilityPass = findViewById(R.id.btn_visibility_pass);
         btnVisibilityPass.setOnClickListener(this);
 
@@ -76,6 +80,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     ((ImageView)(v)).setImageResource(R.drawable.ic_show_pass);
                     etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
+                break;
+            case R.id.tv_forgot_password:
+                Intent goToForgotPassword = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+                startActivity(goToForgotPassword);
                 break;
             case R.id.btn_sign_in:
                 signIn();
