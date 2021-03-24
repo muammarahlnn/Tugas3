@@ -13,5 +13,6 @@
     <color name="grayPrimary">#8D8D8D</color>
     <color name="blackPrimary">#21272C</color>
     <color name="greenPrimary">#1abc9c</color>
+    <color name="redPrimary">#EBF44336</color>
 
 </resources>

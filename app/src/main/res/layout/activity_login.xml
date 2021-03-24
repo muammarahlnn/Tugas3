@@ -45,11 +45,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:fontFamily="@font/monsterrat_light"
-                android:text="Username"
+                android:text="Email"
                 android:textColor="@color/grayPrimary"
                 android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/bg_input_edit_text"
