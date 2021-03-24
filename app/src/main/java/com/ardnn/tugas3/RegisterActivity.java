@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    private static final String TAG = "TAG";
+    private static final String TAG = "RegisterActivity";
 
     FirebaseFirestore firebaseFirestore;
     FirebaseAuth firebaseAuth;
@@ -131,7 +131,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Log.d(TAG, "onFailuer: " + e.toString());
+                                Log.d(TAG, "onFailure: " + e.toString());
                             }
                         });
 

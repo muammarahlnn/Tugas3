@@ -55,6 +55,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
                         Toast.makeText(ForgotPasswordActivity.this, "Error! Reset link is not sent " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+                finish();
                 break;
         }
     }
