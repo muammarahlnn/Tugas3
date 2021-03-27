@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     View btnLogout;
     TextView tvFullname, tvEmail;
     String userId;
-    LinearLayout btnJava;
+//    LinearLayout btnJava;
 
 
     @Override
@@ -57,8 +57,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         btnLogout = findViewById(R.id.btn_logout);
         btnLogout.setOnClickListener(this);
 
-        btnJava = findViewById(R.id.btn_java);
-        btnJava.setOnClickListener(this);
+//        btnJava = findViewById(R.id.btn_java);
+//        btnJava.setOnClickListener(this);
 
         DocumentReference documentReference = firebaseFirestore.collection("users").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
@@ -69,12 +69,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-//
-//        rvDatas = findViewById(R.id.rv_datas);
-//        rvDatas.setHasFixedSize(true);
-//
-//        list.addAll(ProgrammingLanguagesData.getListData());
-//        showRecyclerList();
+
+        rvDatas = findViewById(R.id.rv_datas);
+        rvDatas.setHasFixedSize(true);
+
+        list.addAll(ProgrammingLanguagesData.getListData());
+        showRecyclerList();
     }
 
     private void showRecyclerList() {
@@ -106,10 +106,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(backToLogin);
                 finish();
                 break;
-            case R.id.btn_java:
-                Intent goToJava = new Intent(HomeActivity.this, JavaActivity.class);
-                startActivity(goToJava);
-                break;
+//            case R.id.btn_java:
+//                Intent goToJava = new Intent(HomeActivity.this, JavaActivity.class);
+//                startActivity(goToJava);
+//                break;
         }
     }
 }

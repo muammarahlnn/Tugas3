@@ -74,329 +74,55 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-            <!--    under construction-->
-            <!--    <LinearLayout-->
-            <!--        android:id="@+id/linearLayout"-->
-            <!--        android:layout_width="match_parent"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:layout_marginTop="172dp"-->
-            <!--        android:layout_marginStart="24dp"-->
-            <!--        android:layout_marginEnd="24dp"-->
-            <!--        android:background="@drawable/bg_layout_form"-->
-            <!--        android:orientation="vertical"-->
-            <!--        android:padding="24dp"-->
-            <!--        app:layout_constraintEnd_toEndOf="parent"-->
-            <!--        app:layout_constraintStart_toStartOf="parent"-->
-            <!--        app:layout_constraintTop_toTopOf="parent">-->
-
-            <!--        <TextView-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:fontFamily="@font/monsterrat_regular"-->
-            <!--            android:text="Main Menus"-->
-            <!--            android:textSize="19sp"-->
-            <!--            android:textColor="@color/blackPrimary"/>-->
-
-            <!--        <TextView-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:fontFamily="@font/monsterrat_light"-->
-            <!--            android:text="Find your favorite programming language"-->
-            <!--            android:textSize="14sp"-->
-            <!--            android:textColor="@color/grayPrimary"/>-->
-
-            <!--        <View-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="1dp"-->
-            <!--            android:layout_marginTop="12dp"-->
-            <!--            android:layout_marginBottom="12dp"-->
-            <!--            android:background="#EDEDED" />-->
-
-            <!--        <androidx.recyclerview.widget.RecyclerView-->
-            <!--            android:id="@+id/rv_datas"-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="wrap_content" >-->
-
-
-            <!--        </androidx.recyclerview.widget.RecyclerView>-->
-
-
-            <!--    </LinearLayout>-->
-
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
+                android:layout_marginTop="142dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/bg_layout_form"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
-                android:paddingTop="24dp"
-                android:paddingRight="24dp"
-                android:paddingBottom="30dp"
+                android:padding="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/v_circle">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/monsterrat_regular"
                     android:text="Main Menus"
-                    android:textColor="@color/blackPrimary"
-                    android:textSize="20sp" />
+                    android:textSize="19sp"
+                    android:textColor="@color/blackPrimary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/monsterrat_light"
                     android:text="Find your favorite programming language"
-                    android:textColor="@color/grayPrimary"
-                    android:textSize="15sp" />
+                    android:textSize="14sp"
+                    android:textColor="@color/grayPrimary"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
                     android:background="#EDEDED" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/btn_java"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/java" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="Java"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/python" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="Python"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/javascript" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="Javascript"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_datas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/c" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="C"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/cpp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="C++"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/csharp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="C#"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/kotlin" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="Kotlin"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/dart" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="Dart"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_marginBottom="8dp"
-                            android:src="@drawable/php" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/monsterrat_regular"
-                            android:text="PHP"
-                            android:textColor="@color/blackPrimary"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -427,12 +153,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
             <HorizontalScrollView
-                android:scrollbars="none"
+                android:id="@+id/horizontalScrollView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_layout_form"
+                android:scrollbars="none"
+                android:paddingBottom="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6">
@@ -440,33 +168,92 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginRight="24dp"
-                        android:background="@drawable/bg_img_news"
-                        android:src="@drawable/news1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginRight="24dp"
-                        android:background="@drawable/bg_img_news"
-                        android:src="@drawable/news2"/>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/news1" />
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="100dp"
-                        android:layout_marginRight="24dp"
-                        android:background="@drawable/bg_img_news"
-                        android:src="@drawable/news3"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/monsterrat_light"
+                            android:text="News 1"
+                            android:textColor="@color/grayPrimary"
+                            android:textSize="15sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/news2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/monsterrat_light"
+                            android:text="News 2"
+                            android:textColor="@color/grayPrimary"
+                            android:textSize="15sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/news1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/monsterrat_light"
+                            android:text="News 3"
+                            android:textColor="@color/grayPrimary"
+                            android:textSize="15sp"/>
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
 
             </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
